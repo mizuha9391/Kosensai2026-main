@@ -1,0 +1,17 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+overrides:
+  better-sqlite3: ^9.6.0
+
+onlyBuiltDependencies:
+  - sharp
+  - esbuild
+  - unrs-resolver
+
+allowBuilds:
+  '@prisma/client': false
+  esbuild: true
+  sharp: true
+  unrs-resolver: true
